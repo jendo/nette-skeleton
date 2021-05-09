@@ -1,1 +1,1 @@
-# docker-wamp
+# Nette running on docker
