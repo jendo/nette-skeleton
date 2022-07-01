@@ -13,3 +13,15 @@ session:
 
 services:
 	router: App\Router\RouterFactory::createRouter
+
+
+extensions:
+	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+
+console:
+	name: Nette project
+	version: '1.0'
+	catchExceptions: true
+	autoExit: true
+	url: http://nette-shop.l:90/
+	lazy: false
