@@ -13,6 +13,9 @@ session:
 
 services:
 	router: App\Router\RouterFactory::createRouter
+	commands.foo:
+		class: App\Console\AddUserCommand
+		tags: [console.command: user:add]
 
 
 extensions:
