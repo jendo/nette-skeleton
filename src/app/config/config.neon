@@ -20,6 +20,12 @@ services:
 
 extensions:
 	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+	migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
+
+migrations:
+	dir: %appDir%/../migrations
+	driver: mysql
+	dbal: nette
 
 console:
 	name: Nette project
